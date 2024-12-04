@@ -1,0 +1,31 @@
+.btnWrap {
+  border-radius: 10px;
+  height: 40px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  font-size: 1.2em;
+}
+
+.text {
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.2em;
+}
+
+.textUnderline {
+  text-decoration: underline;
+}
+
+.btnWrap:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

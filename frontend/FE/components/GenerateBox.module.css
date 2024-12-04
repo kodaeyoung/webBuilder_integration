@@ -1,0 +1,85 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.genBoxWrap {
+  height: 100%;
+  width: 100%;
+}
+
+.genBox {
+  overflow-y: scroll;
+}
+
+.editorWrap {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 1rem 2rem;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  height: 5rem;
+  z-index: 9999999999;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #4629f2;
+  border-radius: 16px;
+  background-color: #fff;
+  width: 90%;
+  box-sizing: border-box;
+  margin-right: 1rem;
+}
+
+.input {
+  flex: 1;
+  border: none;
+  outline: none;
+  margin: 0.5rem;
+  font-size: 1rem;
+  color: #4629f2;
+  padding-left: 1rem;
+  border-radius: 16px;
+}
+
+.input::placeholder {
+  color: #666;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  border-radius: 16px;
+}
+
+.input:disabled {
+  background: none;
+  display: none;
+}
+
+/* Add this CSS */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.7); /* Dims the background */
+  z-index: 9999;
+  pointer-events: none; /* So you can still click on the highlighted element */
+}
+
+.DOMhighlighted {
+  border: 2px solid blue !important;
+  z-index: 10000; /* Ensure this is higher than the overlay */
+  position: relative;
+}
+
+.dimmed {
+  opacity: 0.3;
+  pointer-events: none;
+}

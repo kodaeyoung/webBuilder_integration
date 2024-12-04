@@ -1,0 +1,13 @@
+# 환경 변수 파일
+backend/.env
+
+의존성
+backend/node_modules
+
+frontend/node_modules
+
+backend/package-lock.json
+backend/package.json
+
+frontend/package-lock.json
+frontend/package.json

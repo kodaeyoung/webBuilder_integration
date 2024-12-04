@@ -1,0 +1,344 @@
+.section {
+  padding: 2rem;
+}
+
+.sectionControls {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.moreBtn {
+  margin-left: 1rem;
+}
+
+.sectionLeft {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sectionTitle {
+  font-size: 3rem;
+  padding: 1rem 0;
+  font-weight: lighter;
+}
+
+.sectionRight {
+  display: flex;
+  gap: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  height: 10%;
+}
+
+.cardProfileWrap {
+  display: flex;
+  align-items: center;
+}
+
+.cardProfile {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.cardProfileImg {
+  object-fit: cover;
+}
+
+.cardHeaderInfo {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.cardTitle {
+  padding-top: 2rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cardUser {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.cardMenuButton {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.cardImage {
+  background: #f4f4f4;
+  height: 40%;
+  margin-bottom: 1rem;
+  border-radius: 16px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.cardImageBtn {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cardImage:hover .cardImageBtn {
+  opacity: 1;
+}
+
+.cardContent {
+  margin-bottom: 1rem;
+  height: 40%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.cardSubhead {
+  font-size: 0.875rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+}
+
+.likeIcon {
+  margin-right: 0.5rem;
+}
+
+.categoriesWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.categories {
+  display: flex;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  gap: 0.5rem;
+}
+
+.categories::-webkit-scrollbar {
+  display: none;
+}
+
+.category {
+  flex: 0 0 auto;
+  margin: 1rem 0;
+  padding: 0.6rem 1rem;
+  background: #fff;
+  border: 1px solid #4629f2;
+  border-radius: 100rem;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #3b3b3b;
+  transition: box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.category:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.activeCategory {
+  background-color: #4629f2;
+  color: #fff;
+  border: 1px solid #4629f2;
+  transition: box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.searchWrap {
+  border: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.searchBox {
+  width: 15rem;
+  display: flex;
+  border-bottom: 1px solid #888;
+  box-sizing: border-box;
+  padding: 0.6rem 0.4rem;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+  border-radius: 0;
+}
+
+.searchBox:focus-within {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  border-radius: 0.4rem;
+}
+
+.searchIcon {
+  font-size: 1rem;
+  color: #888;
+  font-weight: lighter;
+  padding-right: 0.4rem;
+}
+
+.searchInput {
+  background: none;
+  border: none;
+  color: #000;
+  font-size: 1rem;
+  box-sizing: border-box;
+  font-weight: lighter;
+  outline: none;
+}
+
+.searchInput::placeholder {
+  color: #888;
+  font-size: 1rem;
+}
+
+@media (max-width: 468px) {
+  .sectionControls {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .sectionLeft {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .sectionRight {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .searchWrap {
+    width: 100%;
+    margin-top: 1rem;
+    justify-content: flex-start;
+  }
+  .searchBox {
+    width: 100%;
+  }
+}
+
+.pageinputform {
+  display: block;
+  margin: auto;
+  font-size: medium;
+  width: 100%;
+  height: 2rem;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1.4rem 0;
+  border: 1px solid #888;
+}
+
+.modalContent {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 20rem;
+  text-align: center;
+}
+
+.modalOverlay {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.confirmButton,
+.cancelButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirmButton {
+  background-color: #4629f2;
+  color: #fff;
+}
+
+.cancelButton {
+  background-color: #ccc;
+  color: black;
+}
