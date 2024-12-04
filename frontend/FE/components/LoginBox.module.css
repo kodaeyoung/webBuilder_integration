@@ -1,0 +1,42 @@
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.imgBox {
+  z-index: -99;
+  width: 40%;
+  height: 20%;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.img {
+  object-fit: contain;
+}
+
+.title {
+  margin-bottom: 100px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.bold {
+  font-weight: bold;
+  color: #4629f2;
+}
+
+.btnWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
